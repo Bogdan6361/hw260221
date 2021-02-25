@@ -1,0 +1,87 @@
+html,body {
+  font-family: Arial;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: lightgray;
+}
+
+.toolbar {
+  display: flex;
+}
+
+input[name='task'] {
+  border: 0;
+  border-bottom: 2px solid darkslategray;
+  outline: none;
+  padding: 7px 20px;
+}
+
+input[name='task']:hover, input[name='task']:focus {
+  border-bottom: 2px solid black;
+}
+
+#createTaskButton, #deleteTaskButton {
+  background: darkslategray;
+  color: white;
+  border: 0;
+  box-sizing: border-box;
+  padding: 7px 20px;
+  cursor: pointer;
+  margin: 0 0 0 5px;
+  outline: none;
+}
+
+#createTaskButton:hover, #deleteTaskButton:hover, #createTaskButton:focus, #deleteTaskButton:focus {
+  background: black;
+}
+
+.inputText {
+  padding: 10px;
+  text-align: center;
+}
+
+#tasksList {
+  list-style: none;
+  padding: 0;
+}
+
+li.task-item:hover, li.task-selected {
+  background: gainsboro;
+  cursor: pointer;
+}
+
+li.task-item label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+
+li.task-item label .task-checkbox {
+  margin-right: 10px;
+}
+
+li.task-item label .task-text {
+  font-weight: bold;
+}
+
+li.task-item label .task-time {
+  position: absolute;
+  right: 10px;
+  color: darkslategray;
+}
+
+.invalid_style {
+  background: #ffdbdb;
+}
+
+.valid_style {
+  background: #cfffcf;
+}
